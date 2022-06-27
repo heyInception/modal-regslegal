@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    font-family: "Inter";
+}
+
+button.btn-default {
+    background-color: #102343;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    min-width: 189px;
+    padding: 12px 0;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 2px solid #102343;
+    cursor: pointer;
+}
+
+button.btn-default::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+    transition: 0.45s;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+}
+
+button.btn-default:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.75s;
+    transform: skewX(45deg) scale(1, 1);
+}
+
+button.btn-default:hover {
+    color: #102343;
+}
+
+.fancybox-overlay .fancybox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 8040;
+    background: url(https://wp.regslegal.ru/wp-content/themes/regslegal_v2/img/Vector.png) no-repeat;
+}
+
+.modal_offer-content {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.fancybox-overlay .fancybox-skin {
+    background: #ffffff;
+}
+
+.modal_offer-header {
+    margin-bottom: 30px;
+}
+
+.modal_offer-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.modal_offer-body__title {
+    background: #102343;
+    border-radius: 4px 4px 0px 0px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.modal_offer-body__content {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 45px 0 130px;
+    gap: 30px;
+}
+
+.modal_offer-body__label {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.modal_offer-body__content label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #333333;
+}
+
+.modal_offer-body__content input,
+.modal_offer-body__content textarea {
+    background: #eef2f7;
+    padding: 0 23px;
+    outline: none;
+    border: none;
+}
+
+.modal_offer-body__content textarea,
+.modal_offer-body__content input {
+    height: 66px;
+    resize: none;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    line-height: 66px;
+    font-size: 14px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 66px;
+    color: #333333;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 66px;
+    color: #333333;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 66px;
+    color: #333333;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.modal_offer-body__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.modal_offer-body__column-6 {
+    flex: 0 0 48%;
+}
+
+.modal_offer-body__column-6:last-child {
+    flex: 0 0 48%;
+}
+
+.modal_offer-body__wrap {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid #e0e0e0;
+}
+
+.modal_offer-body__radio:first-child {
+    border-right: 1px solid #e0e0e0;
+}
+
+.modal_offer-body__radio {
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal_offer-body__radio .wpcf7-list-item-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #626262;
+    cursor: pointer;
+}
+
+.modal_offer-body__radio [type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.modal_offer-body__radio [type="radio"]+.wpcf7-list-item-label {
+    position: relative;
+    padding-left: 24px;
+}
+
+.modal_offer-body__radio [type="radio"]+.wpcf7-list-item-label::before,
+.modal_offer-body__radio [type="radio"]+.wpcf7-list-item-label::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.modal_offer-body__radio [type="radio"]+.wpcf7-list-item-label::before,
+.modal_offer-body__radio [type="radio"]+.wpcf7-list-item-label::after {
+    border-radius: 50%;
+}
+
+.modal_offer-body__radio [type="radio"]+.wpcf7-list-item-label::before {
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #3F6363;
+}
+
+.modal_offer-body__radio [type="radio"]+.wpcf7-list-item-label::after {
+    top: 3px;
+    left: 3px;
+    width: 11px;
+    height: 11px;
+    background: #3F6363;
+    transition: all 0.2s;
+}
+
+.modal_offer-body__radio [type="radio"]:not(:checked)+.wpcf7-list-item-label::after {
+    opacity: 0;
+    transform: scale(0.01);
+}
+
+.modal_offer-body__radio [type="radio"]:checked+.wpcf7-list-item-label::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal_offer-body__label [type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.modal_offer-body__label [type="checkbox"]+.wpcf7-list-item-label {
+    position: relative;
+    padding-left: 24px;
+    display: flex;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    color: #626262;
+}
+
+.modal_offer-body__label [type="checkbox"]+.wpcf7-list-item-label::before,
+.modal_offer-body__label [type="checkbox"]+.wpcf7-list-item-label::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.modal_offer-body__label [type="checkbox"]+.wpcf7-list-item-label::before {
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #3F6363;
+}
+
+.modal_offer-body__label [type="checkbox"]+.wpcf7-list-item-label::after {
+    top: 3px;
+    left: 3px;
+    width: 11px;
+    height: 11px;
+    background: #3F6363;
+    transition: all 0.2s;
+}
+
+.modal_offer-body__label [type="checkbox"]:not(:checked)+.wpcf7-list-item-label::after {
+    opacity: 0;
+    transform: scale(0.01);
+}
+
+.modal_offer-body__label [type="checkbox"]:checked+.wpcf7-list-item-label::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+ul.slider-paging-number {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.slider-paging-number li {
+    display: none;
+}
+
+ul.slider-paging-number li.slick-active {
+    display: inline-block;
+}
+
+ul.slider-paging-number button {
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.modal_offer-body__sublabel {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 110%;
+    color: #626262;
+}
+
+.modal_offer-body__content a,
+.modal_offer-body__content a:active {
+    color: #2F80ED;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 110%;
+}
+
+.modal_offer-body__loader,
+.modal_offer-body__loader_two {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+
+.modal_offer-body__loader .modal_offer-body__row,
+.modal_offer-body__loader_two {
+    display: none;
+}
+
+.modal_offer-body__column-6 .wpcf7-form-control-wrap {
+    max-width: 369px;
+}
+
+.modal_offer-body__sublabel--mt {
+    margin-bottom: 14px;
+}
+
+.modal_offer-body__head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #333333;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.modal_offer-body__head::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -10px;
+    background-color: #E0E0E0;
+}
+
+.modal_offer-body__content input[type="submit"] {
+    width: 213px;
+    height: 52px;
+    background: #102343;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal_offer-body__row.modal_offer-body__row--jcfs {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 54px;
+    gap: 32px;
+}
+
+.modal_offer-body__row.modal_offer-body__row--jcfs span.wpcf7-list-item-label,
+.modal_offer-body__row.modal_offer-body__row--jcfs a {
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.slick-slide {
+    height: 0px!important;
+}
+
+.slick-slide.slick-active {
+    height: 100% !important;
+}

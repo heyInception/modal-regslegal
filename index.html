@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Form</title>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&amp;display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slick-theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+    <a href="#modal_callback" class="fancybox" style="display: none;"><button
+            class="btn-default grow_skew_backward">Заказать
+            звонок</button></a>
+    <div id="modal_callback" class="modal fade" tabindex="-1" role="dialog" style="display: block;">
+        <div class="modal_offer-dialog" role="document">
+            <div class="modal_offer-content">
+                <div class="modal_offer-header">
+                    <div class="modal_offer-title" style="text-align: center;">Заполните анкету и получите индивидуальное предложение</div>
+                </div>
+                <div class="modal_offer-body">
+                    <div class="modal_offer-body__title">Шаг <span></span> из 3</div>
+                    <form action="">
+                        <div class="slider-main">
+                            <div class="slider-wrap">
+                                <div class="modal_offer-body__content">
+                                    <div class="modal_offer-body__label">
+                                        <label>Наименование ООО (полное/сокращённое)</label>
+                                        <span class="wpcf7-form-control-wrap textarea-453"><textarea name="textarea-453"
+                                                cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                                aria-invalid="false"
+                                                placeholder="*Общество с ограниченной ответственностью «Автоспасервис – Москва» / ООО «АСС – М» /ООО «Автоспасервис – Москва»"></textarea></span>
+                                    </div>
+                                    <div class="modal_offer-body__row">
+                                        <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                            <div class="modal_offer-body__label">
+                                                <label>Размер УК</label>
+                                                <span class="wpcf7-form-control-wrap UKsize"><textarea name="UKsize"
+                                                        cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                                        aria-invalid="false"
+                                                        placeholder="*10 000 рублей (минимально)"></textarea></span>
+                                            </div>
+                                        </div>
+                                        <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                            <label>Способ оплаты УК</label>
+                                            <div class="modal_offer-body__wrap">
+                                                <div class="modal_offer-body__radio">
+                                                    <span class="wpcf7-form-control-wrap fiz"><span
+                                                            class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                            <span class="wpcf7-list-item first last">
+                                                                <label><input type="radio" name="fiz"
+                                                                        value="Физическое лицо – резидент РФ"
+                                                                        checked="checked">
+                                                                    <span class="wpcf7-list-item-label">Денежный</span>
+                                                    </label>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="modal_offer-body__radio">
+                                                    <span class="wpcf7-form-control-wrap fiz"><span
+                                                            class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                            <span class="wpcf7-list-item first last">
+                                                                <label>
+                                                                    <input type="radio" name="fiz"
+                                                                        value="Физическое лицо – резидент РФ">
+                                                                    <span
+                                                                        class="wpcf7-list-item-label">Неденежный</span>
+                                                    </label>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal_offer-body__label">
+                                        <label>Вид имущества</label>
+                                        <span class="wpcf7-form-control-wrap textarea-453"><textarea name="textarea-453"
+                                                cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                                aria-invalid="false"
+                                                placeholder="Недвижимость, ценные бумаги, техника и иноедвижимое имущество, имущественные права и пр."></textarea></span>
+                                    </div>
+                                    <div class="modal_offer-body__label">
+                                        <label>Планируемый вид деятельности ООО</label>
+                                        <span class="wpcf7-form-control-wrap textarea-453"><textarea name="textarea-453"
+                                                cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                                aria-invalid="false"
+                                                placeholder="Опишите планируемый вид деятельности ООО, отрасль и т.п."></textarea></span>
+                                    </div>
+                                    <div class="modal_offer-body__label">
+                                        <label>Планируемый вид деятельности ООО</label>
+                                        <span class="wpcf7-form-control-wrap checkbox-601"><span
+                                                class="wpcf7-form-control wpcf7-checkbox" id="checkbox-601"><span
+                                                    class="wpcf7-list-item first last"><label><input type="checkbox"
+                                                            name="checkbox-601[]" value="checkbox-601"><span
+                                                            class="wpcf7-list-item-label">Есть юридический
+                                                            адрес</span></label>
+                                        </span>
+                                        </span>
+                                        </span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="slider-wrap">
+                                <div class="modal_offer-body__content">
+                                    <div class="modal_offer-body__loader">
+                                        <div class="modal_offer-body__row">
+                                            <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                                <div class="modal_offer-body__label">
+                                                    <label>1 участник</label>
+                                                    <div class="modal_offer-body__sublabel">Форма собственности</div>
+                                                    <div class="modal_offer-body__wrap">
+                                                        <div class="modal_offer-body__radio">
+                                                            <span class="wpcf7-form-control-wrap fiz"><span
+                                                                    class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                    <span class="wpcf7-list-item first last">
+                                                                        <label><input type="radio" name="fiz"
+                                                                                value="Физическое лицо – резидент РФ"
+                                                                                checked="checked" tabindex="0">
+                                                                            <span
+                                                                                class="wpcf7-list-item-label">Юридическое
+                                                                                лицо</span>
+                                                            </label>
+                                                            </span>
+                                                            </span>
+                                                            </span>
+
+                                                        </div>
+                                                        <div class="modal_offer-body__radio">
+                                                            <span class="wpcf7-form-control-wrap fiz"><span
+                                                                    class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                    <span class="wpcf7-list-item first last">
+                                                                        <label>
+                                                                            <input type="radio" name="fiz"
+                                                                                value="Физическое лицо – резидент РФ"
+                                                                                tabindex="0">
+                                                                            <span
+                                                                                class="wpcf7-list-item-label">Физическое
+                                                                                лицо</span>
+                                                            </label>
+                                                            </span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                                <div class="modal_offer-body__sublabel">Резидент / не резидент РФ</div>
+                                                <div class="modal_offer-body__wrap">
+                                                    <div class="modal_offer-body__radio">
+                                                        <span class="wpcf7-form-control-wrap fiz"><span
+                                                                class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                <span class="wpcf7-list-item first last">
+                                                                    <label><input type="radio" name="fiz"
+                                                                            value="Физическое лицо – резидент РФ"
+                                                                            checked="checked" tabindex="0">
+                                                                        <span
+                                                                            class="wpcf7-list-item-label">Денежный</span>
+                                                        </label>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="modal_offer-body__radio">
+                                                        <span class="wpcf7-form-control-wrap fiz"><span
+                                                                class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                <span class="wpcf7-list-item first last">
+                                                                    <label>
+                                                                        <input type="radio" name="fiz"
+                                                                            value="Физическое лицо – резидент РФ"
+                                                                            tabindex="0">
+                                                                        <span
+                                                                            class="wpcf7-list-item-label">Неденежный</span>
+                                                        </label>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal_offer-body__row">
+                                            <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                                <div class="modal_offer-body__label">
+                                                    <label>2 участник</label>
+                                                    <div class="modal_offer-body__sublabel">Форма собственности</div>
+                                                    <div class="modal_offer-body__wrap">
+                                                        <div class="modal_offer-body__radio">
+                                                            <span class="wpcf7-form-control-wrap fiz"><span
+                                                                    class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                    <span class="wpcf7-list-item first last">
+                                                                        <label><input type="radio" name="fiz"
+                                                                                value="Физическое лицо – резидент РФ"
+                                                                                checked="checked" tabindex="0">
+                                                                            <span
+                                                                                class="wpcf7-list-item-label">Юридическое
+                                                                                лицо</span>
+                                                            </label>
+                                                            </span>
+                                                            </span>
+                                                            </span>
+
+                                                        </div>
+                                                        <div class="modal_offer-body__radio">
+                                                            <span class="wpcf7-form-control-wrap fiz"><span
+                                                                    class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                    <span class="wpcf7-list-item first last">
+                                                                        <label>
+                                                                            <input type="radio" name="fiz"
+                                                                                value="Физическое лицо – резидент РФ"
+                                                                                tabindex="0">
+                                                                            <span
+                                                                                class="wpcf7-list-item-label">Физическое
+                                                                                лицо</span>
+                                                            </label>
+                                                            </span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal_offer-body__sublabel">Организационно-правовая форма (только для ЮЛ - не резидентов РФ)</div>
+                                                    <div class="modal_offer-body__wrap">
+                                                        <span class="wpcf7-form-control-wrap UKsize"><textarea
+                                                                name="UKsize" cols="40" rows="10"
+                                                                class="wpcf7-form-control wpcf7-textarea"
+                                                                aria-invalid="false"
+                                                                placeholder="Введите свою ОПФ"></textarea></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                                <div class="modal_offer-body__sublabel">Резидент / не резидент РФ</div>
+                                                <div class="modal_offer-body__wrap">
+                                                    <div class="modal_offer-body__radio">
+                                                        <span class="wpcf7-form-control-wrap fiz"><span
+                                                                class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                <span class="wpcf7-list-item first last">
+                                                                    <label><input type="radio" name="fiz"
+                                                                            value="Физическое лицо – резидент РФ"
+                                                                            checked="checked" tabindex="0">
+                                                                        <span class="wpcf7-list-item-label">Резидент
+                                                                            РФ</span>
+                                                        </label>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="modal_offer-body__radio">
+                                                        <span class="wpcf7-form-control-wrap fiz"><span
+                                                                class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                <span class="wpcf7-list-item first last">
+                                                                    <label>
+                                                                        <input type="radio" name="fiz"
+                                                                            value="Физическое лицо – резидент РФ"
+                                                                            tabindex="0">
+                                                                        <span class="wpcf7-list-item-label">Резидент
+                                                                            РФ</span>
+                                                        </label>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="modal_offer-body__sublabel modal_offer-body__sublabel--mt">
+                                                    Юрисдикция - страна</div>
+                                                <div class="modal_offer-body__wrap">
+                                                    <span class="wpcf7-form-control-wrap UKsize"><textarea name="UKsize"
+                                                            cols="40" rows="10"
+                                                            class="wpcf7-form-control wpcf7-textarea"
+                                                            aria-invalid="false"
+                                                            placeholder="ЮЛ - юрисдикция, страна"></textarea></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal_offer-body__row">
+                                            <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                                <div class="modal_offer-body__label">
+                                                    <label>3 участник</label>
+                                                    <div class="modal_offer-body__sublabel">Форма собственности</div>
+                                                    <div class="modal_offer-body__wrap">
+                                                        <div class="modal_offer-body__radio">
+                                                            <span class="wpcf7-form-control-wrap fiz"><span
+                                                                    class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                    <span class="wpcf7-list-item first last">
+                                                                        <label><input type="radio" name="fiz"
+                                                                                value="Физическое лицо – резидент РФ"
+                                                                                checked="checked" tabindex="0">
+                                                                            <span
+                                                                                class="wpcf7-list-item-label">Юридическое
+                                                                                лицо</span>
+                                                            </label>
+                                                            </span>
+                                                            </span>
+                                                            </span>
+
+                                                        </div>
+                                                        <div class="modal_offer-body__radio">
+                                                            <span class="wpcf7-form-control-wrap fiz"><span
+                                                                    class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                    <span class="wpcf7-list-item first last">
+                                                                        <label>
+                                                                            <input type="radio" name="fiz"
+                                                                                value="Физическое лицо – резидент РФ"
+                                                                                tabindex="0">
+                                                                            <span
+                                                                                class="wpcf7-list-item-label">Физическое
+                                                                                лицо</span>
+                                                            </label>
+                                                            </span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                                <div class="modal_offer-body__sublabel">Резидент / не резидент РФ</div>
+                                                <div class="modal_offer-body__wrap">
+                                                    <div class="modal_offer-body__radio">
+                                                        <span class="wpcf7-form-control-wrap fiz"><span
+                                                                class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                <span class="wpcf7-list-item first last">
+                                                                    <label><input type="radio" name="fiz"
+                                                                            value="Физическое лицо – резидент РФ"
+                                                                            checked="checked" tabindex="0">
+                                                                        <span
+                                                                            class="wpcf7-list-item-label">Денежный</span>
+                                                        </label>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="modal_offer-body__radio">
+                                                        <span class="wpcf7-form-control-wrap fiz"><span
+                                                                class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                <span class="wpcf7-list-item first last">
+                                                                    <label>
+                                                                        <input type="radio" name="fiz"
+                                                                            value="Физическое лицо – резидент РФ"
+                                                                            tabindex="0">
+                                                                        <span
+                                                                            class="wpcf7-list-item-label">Неденежный</span>
+                                                        </label>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" id="loadMore">+ добавить участника</a>
+                                    <div class="modal_offer-body__label">
+                                        <span class="wpcf7-form-control-wrap checkbox-601"><span
+                                                class="wpcf7-form-control wpcf7-checkbox" id="checkbox-601"><span
+                                                    class="wpcf7-list-item first last"><label><input type="checkbox"
+                                                            name="checkbox-601[]" value="checkbox-601"
+                                                            tabindex="0"><span class="wpcf7-list-item-label">Есть совет
+                                                            директоров / наблюдательный совет</span></label>
+                                        </span>
+                                        </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-wrap">
+                                <div class="modal_offer-body__content">
+                                    <div class="modal_offer-body__label">
+                                        <div class="modal_offer-body__head">Единоличный исполнительный орган (ЕИО)</div>
+                                    </div>
+                                    <div class="modal_offer-body__loader_two">
+                                        <div class="modal_offer-body__label modal_offer-body__label--load">
+                                            <label>Наименование </label>
+                                            <span class="wpcf7-form-control-wrap textarea-453"><textarea name="textarea-453"
+                                                    cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                                    aria-invalid="false"
+                                                    placeholder="Генеральный директор, директор, президент и пр."></textarea></span>
+                                        </div>
+                                        <div class="modal_offer-body__row">
+                                            <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                                <div class="modal_offer-body__label">
+                                                    <div class="modal_offer-body__sublabel">Форма собственности</div>
+                                                    <div class="modal_offer-body__wrap">
+                                                        <div class="modal_offer-body__radio">
+                                                            <span class="wpcf7-form-control-wrap fiz"><span
+                                                                    class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                    <span class="wpcf7-list-item first last">
+                                                                        <label><input type="radio" name="fiz"
+                                                                                value="Физическое лицо – резидент РФ"
+                                                                                checked="checked" tabindex="0">
+                                                                            <span
+                                                                                class="wpcf7-list-item-label">Юридическое
+                                                                                лицо</span>
+                                                            </label>
+                                                            </span>
+                                                            </span>
+                                                            </span>
+
+                                                        </div>
+                                                        <div class="modal_offer-body__radio">
+                                                            <span class="wpcf7-form-control-wrap fiz"><span
+                                                                    class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                    <span class="wpcf7-list-item first last">
+                                                                        <label>
+                                                                            <input type="radio" name="fiz"
+                                                                                value="Физическое лицо – резидент РФ"
+                                                                                tabindex="0">
+                                                                            <span
+                                                                                class="wpcf7-list-item-label">Физическое
+                                                                                лицо</span>
+                                                            </label>
+                                                            </span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal_offer-body__sublabel">Организационно-правовая форма (только для ЮЛ - не резидентов РФ)</div>
+                                                    <div class="modal_offer-body__wrap">
+                                                        <span class="wpcf7-form-control-wrap UKsize"><textarea
+                                                                name="UKsize" cols="40" rows="10"
+                                                                class="wpcf7-form-control wpcf7-textarea"
+                                                                aria-invalid="false"
+                                                                placeholder="Введите свою ОПФ"></textarea></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                                <div class="modal_offer-body__sublabel">Резидент / не резидент РФ</div>
+                                                <div class="modal_offer-body__wrap">
+                                                    <div class="modal_offer-body__radio">
+                                                        <span class="wpcf7-form-control-wrap fiz"><span
+                                                                class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                <span class="wpcf7-list-item first last">
+                                                                    <label><input type="radio" name="fiz"
+                                                                            value="Физическое лицо – резидент РФ"
+                                                                            checked="checked" tabindex="0">
+                                                                        <span class="wpcf7-list-item-label">Резидент
+                                                                            РФ</span>
+                                                        </label>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="modal_offer-body__radio">
+                                                        <span class="wpcf7-form-control-wrap fiz"><span
+                                                                class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                                <span class="wpcf7-list-item first last">
+                                                                    <label>
+                                                                        <input type="radio" name="fiz"
+                                                                            value="Физическое лицо – резидент РФ"
+                                                                            tabindex="0">
+                                                                        <span class="wpcf7-list-item-label">Резидент
+                                                                            РФ</span>
+                                                        </label>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="modal_offer-body__sublabel modal_offer-body__sublabel--mt">
+                                                    Юрисдикция - страна</div>
+                                                <div class="modal_offer-body__wrap">
+                                                    <span class="wpcf7-form-control-wrap UKsize"><textarea name="UKsize"
+                                                            cols="40" rows="10"
+                                                            class="wpcf7-form-control wpcf7-textarea"
+                                                            aria-invalid="false"
+                                                            placeholder="ЮЛ - юрисдикция, страна"></textarea></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" id="loadMore_two">+ добавить участника</a>
+                                    <div class="modal_offer-body__label">
+                                        <span class="wpcf7-form-control-wrap checkbox-601"><span
+                                                class="wpcf7-form-control wpcf7-checkbox" id="checkbox-601"><span
+                                                    class="wpcf7-list-item first last"><label><input type="checkbox"
+                                                            name="checkbox-601[]" value="checkbox-601"
+                                                            tabindex="0"><span class="wpcf7-list-item-label">Наличие коллегиального исполнительного органа (правление, комитет)</span></label>
+                                        </span>
+                                        </span>
+                                        </span>
+                                    </div>
+                                    <div class="modal_offer-body__row">
+                                        <div class="modal_offer-body__column-6 modal_offer-body__label">
+                                            <label>Система налогообложения</label>
+                                            <div class="modal_offer-body__wrap">
+                                                <div class="modal_offer-body__radio">
+                                                    <span class="wpcf7-form-control-wrap fiz"><span class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                            <span class="wpcf7-list-item first last">
+                                                                <label><input type="radio" name="fiz" value="Физическое лицо – резидент РФ" checked="checked" tabindex="0">
+                                                                    <span class="wpcf7-list-item-label">ОСНО</span>
+                                                    </label>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+
+                                                </div>
+                                                <div class="modal_offer-body__radio">
+                                                    <span class="wpcf7-form-control-wrap fiz"><span class="wpcf7-form-control wpcf7-radio" id="fiz">
+                                                            <span class="wpcf7-list-item first last">
+                                                                <label>
+                                                                    <input type="radio" name="fiz" value="Физическое лицо – резидент РФ" tabindex="0">
+                                                                    <span class="wpcf7-list-item-label">УСН</span>
+                                                    </label>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal_offer-body__label">
+                                        <div class="modal_offer-body__head">Ваши контакты</div>
+                                    </div>
+                                    <div class="modal_offer-body__row">
+                                        <div class="modal_offer-body__column-6">
+                                            <div class="modal_offer-body__label">
+                                                <label>Телефон </label>
+                                                <input type="text" id="wpforms-470-field_4" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][4]" placeholder="+ 7 (___) ___-__-__" required="">
+                                            </div>
+                                        </div>
+                                        <div class="modal_offer-body__column-6">
+                                            <div class="modal_offer-body__label">
+                                                <label>E-mail</label>
+                                                <input type="email" id="wpforms-470-5" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][4]" placeholder="Введите ваш e-mail" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal_offer-body__row modal_offer-body__row--jcfs">
+                                        <input type="submit" value="Отправить заявку">
+                                        <div class="modal_offer-body__label">
+                                            <span class="wpcf7-form-control-wrap checkbox-601"><span
+                                                    class="wpcf7-form-control wpcf7-checkbox" id="checkbox-601"><span
+                                                        class="wpcf7-list-item first last"><label><input type="checkbox"
+                                                                name="checkbox-601[]" value="checkbox-601"
+                                                                tabindex="0"><span class="wpcf7-list-item-label">Я принимаю <a href=""> условия передачи информации</a></span></label>
+                                            </span>
+                                            </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</body>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css' type='text/css' media='screen' />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            openEffect: 'fade',
+            openSpeed: 'normal',
+        });
+    });
+
+    $(document).ready(function() {
+
+        var slidesPerPage = 1
+
+        $(".slider-main").on("init", function(event, slick) {
+            maxPages = Math.ceil(slick.slideCount / slidesPerPage);
+            $(this).find('.slider-paging-number li').append('/ ' + maxPages);
+        });
+
+        $(".slider-main").slick({
+            slidesToShow: slidesPerPage,
+            slidesToScroll: slidesPerPage,
+            arrows: true,
+            autoplay: false,
+            dots: true,
+            infinite: false,
+            swipe: false,
+            touchMove: false,
+            dotsClass: 'slider-paging-number',
+            appendDots: '.modal_offer-body__title span',
+        });
+    });
+
+    $(function() {
+        $(".modal_offer-body__loader .modal_offer-body__row").slice(0, 3).css('display', 'flex');
+        $("#loadMore").on('click', function(e) {
+            e.preventDefault();
+            $(".modal_offer-body__loader .modal_offer-body__row:hidden").slice(0, 1).slideDown();
+            if ($(".modal_offer-body__loader .modal_offer-body__row:hidden").length == 0) {
+                $("#load").fadeOut('slow');
+                $("#loadMore").hide('slow');
+            }
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1500);
+        });
+    });
+    $(function() {
+        $(".modal_offer-body__loader_two").slice(0, 1).css('display', 'flex');
+        $("#loadMore_two").on('click', function(e) {
+            e.preventDefault();
+            $(".modal_offer-body__loader_two:hidden").slice(0, 1).slideDown();
+            if ($(".modal_offer-body__loader_two:hidden").length == 0) {
+                $("#loadMore_two").hide('slow');
+            }
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1500);
+        });
+    });
+</script>
+
+</html>
