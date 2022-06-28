@@ -196,7 +196,7 @@ button.btn-default:hover {
 
 .modal_offer-body__radio {
     cursor: pointer;
-    height: 50px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -419,4 +419,47 @@ ul.slider-paging-number button {
 
 .slick-slide.slick-active {
     height: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .modal_offer-body__row {
+        flex-flow: column;
+        gap: 30px;
+    }
+    .modal_offer-body__content {
+        width: 100%;
+    }
+    .modal_offer-content .slick-dotted.slick-slider {
+        max-width: 480px;
+    }
+    .modal_offer-body__column-6 .wpcf7-form-control-wrap {
+        max-width: 100%;
+        width: 100%;
+    }
+    .modal_offer-body__wrap {
+        text-align: center;
+    }
+    .modal_offer-body__column-6 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal_offer-content .slick-dotted.slick-slider {
+        max-width: 300px;
+    }
+    .modal_offer-body__wrap {
+        flex-flow: column;
+    }
+    .modal_offer-body__radio:first-child {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .modal_offer-body__row {
+        flex-flow: column;
+        gap: 30px;
+        max-width: 300px;
+    }
+    .modal_offer-body__label [type="checkbox"]+.wpcf7-list-item-label {
+        display: block;
+    }
 }
